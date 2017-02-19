@@ -117,5 +117,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
+pmd-admin-template-1.0.0
 # End of https://www.gitignore.io/api/macos,windows,node,visualstudiocode
