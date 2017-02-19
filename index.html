@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Star Trek Tribute :: Aitor Alejandro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="description" content="Star Trek Aitor Alejandro Tribute">
     <meta name="author" content="Aitor Alejandro">
     <!-- Bootstrap css -->
@@ -14,14 +15,46 @@
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
-<body>
+<body class="text-orange">
 <div class="site-container">
 
 <header>
+    <nav class="navbar navbar-inverse pmd-navbar pmd-z-depth">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="pmd-ripple-effect navbar-toggle pmd-navbar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="javascript:void(0);" class="navbar-brand">Start Trek Tribute</a>
+            </div>
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pmd-navbar-sidebar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown pmd-dropdown">
+                        <a aria-expanded="false" role="button" data-toggle="dropdown" data-sidebar="true" class="pmd-ripple-effect dropdown-toggle" href="javascript:void(0);">Series <span class="caret"></span></a>
+                        <div class="pmd-dropdown-menu-container"><div class="pmd-dropdown-menu-bg"></div>
+                        <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Original Series</a></li>
+                            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Next Generation</a></li>
+                            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Deep Space Nine</a></li>
+                            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Voyager</a></li>
+                            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Enterprise</a></li>
+                            <li><a class="pmd-ripple-effect" href="javascript:void(0);">Discovery</a></li>
+                        </ul></div>
+                    </li>
+                    <li><a class="pmd-ripple-effect" href="javascript:void(0);">Films</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h1>Start Trek Tribute</h1>
+                <h1></h1>
                 <p>My personal tribute to Star Trek because I feel like it</p>
             </div>
         </div>
@@ -29,5 +62,38 @@
 </header>
 
 </div>
+
+<!-- Scripts Starts -->
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function() {
+		var sPath=window.location.pathname;
+		var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+		$(".pmd-sidebar-nav").each(function(){
+			$(this).find("a[href='"+sPage+"']").parents(".dropdown").addClass("open");
+			$(this).find("a[href='"+sPage+"']").parents(".dropdown").find('.dropdown-menu').css("display", "block");
+			$(this).find("a[href='"+sPage+"']").parents(".dropdown").find('a.dropdown-toggle').addClass("active");
+			$(this).find("a[href='"+sPage+"']").addClass("active");
+		});
+	});
+</script>
+<script type="text/javascript">
+(function() {
+  "use strict";
+  var toggles = document.querySelectorAll(".c-hamburger");
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+})();
+</script>
+<script src="js/propeller.min.js"></script> 
 </body>
 </html>
