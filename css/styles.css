@@ -70,10 +70,6 @@ ul {
 .site-container {
     min-width: 320px;
 }
-.main-header .site-moto {
-    margin: 0;
-    padding: 0.25rem 0.5rem;
-}
 .main-header .site-title {
     margin: 0;
 }
