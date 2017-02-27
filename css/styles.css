@@ -200,6 +200,9 @@ ul {
 .card-deep-space-nine {
     background-image: url(../img/deep-space-nine-card-bg.jpg);
 }
+.card-voyager {
+    background-image: url(../img/voyager-card-bg.jpg);
+}
 .card-summary {
     padding: 3%;
     color: #f2c300;
