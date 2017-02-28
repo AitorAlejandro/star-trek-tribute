@@ -140,10 +140,11 @@ ul {
 
 .panel {
     border: 5px solid #888;
+    border-top-width: 21px;
+    border-bottom-width: 21px;
     border-radius: 0.813rem;
-    padding: 2rem;
-    margin-bottom: 1.5rem;
-    background-color: #111;   
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem; 
 }
 .panel h1 {
     margin: 0 0  1rem 0;  
@@ -182,14 +183,11 @@ ul {
     background-color: rgba(255, 255, 255, 0);
 }
 .card-title {
-    background: rgba(223, 0, 0, 0.85);
-    padding: 2%;
+    background: #df0000;
+    padding: 3%;
     margin: 0;
     font-size: 100%;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    color: #fff;
 }
 .card-original-series {
     background-image: url(../img/the-original-series-card-bg.jpg);
@@ -202,6 +200,9 @@ ul {
 }
 .card-voyager {
     background-image: url(../img/voyager-card-bg.jpg);
+}
+.card-enterprise {
+    background-image: url(../img/enterprise-card-bg.jpg);
 }
 .card-summary {
     padding: 3%;
