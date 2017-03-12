@@ -216,6 +216,9 @@ ul {
 .poster-the-wrath-of-khan {
     background-image: url(../img/Star_Trek_II_The_Wrath_of_Khan.png);
 }
+.poster-the-search-for-spock {
+    background-image: url(../img/Star_Trek_III_The_Search_for_Spock.png);
+}
 
 .card-summary {
     padding: 1% 3%;
