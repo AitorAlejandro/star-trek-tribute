@@ -219,7 +219,12 @@ ul {
 .poster-the-search-for-spock {
     background-image: url(../img/Star_Trek_III_The_Search_for_Spock.png);
 }
-
+.poster-the-voyage-home {
+    background-image: url(../img/Star_Trek_IV_The_Voyage_Home.png);
+}
+.poster-the-final-frontier {
+    background-image: url(../img/Star_Trek_V_The_Final_Frontier.png);
+}
 .card-summary {
     padding: 1% 3%;
     color: #f2c300;
